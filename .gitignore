@@ -46,3 +46,12 @@ venv/
 .cache/
 .npm/
 .eslintcache
+
+# Backup files
+*_bkup.*
+*_backup.*
+*.bak
+*.backup
+
+# Project specific
+extracted_data.json
