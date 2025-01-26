@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}', // Include all JS/TS/JSX/TSX files in the src directory
+    "./client/index.html",
+    "./client/src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'agenda-gray': '#f3f4f6',
+      },
+    },
   },
   plugins: [],
 };

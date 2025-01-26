@@ -11,7 +11,7 @@ const app = express();
 // Enable CORS
 app.use(cors());
 
-// Serve the React app from the dist directory
+// Serve static files from the Vite build output
 const distPath = join(__dirname, '../../dist');
 app.use(express.static(distPath));
 

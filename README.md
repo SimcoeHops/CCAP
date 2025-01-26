@@ -16,16 +16,17 @@ The Commissioners Court Agenda Picker (CCAP) is a modern web application designe
 ## 🏗️ Project Structure
 
 ```
-CCAP/
+commissioners-court/
 ├── client/                # Frontend application
 │   ├── src/
 │   │   ├── components/   # React components
 │   │   ├── api/         # API integration
-│   │   └── types/       # TypeScript types
-│   └── public/          # Static files
+│   │   ├── types/       # TypeScript types
+│   │   └── assets/      # Static assets
+│   ├── public/          # Public assets
+│   └── index.html       # Entry HTML file
 ├── server/               # Backend application
 │   ├── src/            # Server source code
-│   ├── scripts/        # Python data processing scripts
 │   └── data/           # JSON data files
 ├── dist/                # Production build output
 └── config files         # Various configuration files
@@ -36,13 +37,12 @@ CCAP/
 ### Prerequisites
 - Node.js (v18 or higher)
 - npm or yarn package manager
-- Python 3.8+ (for data processing)
 
 ### Setup Steps
 1. Clone the repository:
 ```bash
-git clone https://github.com/SimcoeHops/CCAP.git
-cd CCAP
+git clone [your-repository-url]
+cd commissioners-court
 ```
 
 2. Install dependencies:
@@ -63,13 +63,11 @@ npm run dev
 ```
 
 ## 💻 Usage
-1. Access the application:
-   - Development: `http://localhost:5173`
-   - Production: `http://localhost:3003`
+1. Access the application at `http://localhost:5173`
 2. Use the global search bar to filter agenda items
 3. Toggle "Show Only Differing Votes" to focus on split decisions
 4. Select items using checkboxes
-5. Click "Generate PDF" to create and download a custom PDF with selected items
+5. Click "Generate Items of Interest" to create and download a custom PDF with selected items
 
 ## ⚙️ Available Scripts
 
@@ -77,6 +75,7 @@ npm run dev
 - `npm run dev:client` - Start only the client development server
 - `npm run dev:server` - Start only the API server
 - `npm run build` - Build the production version
+- `npm run build:server` - Build the server for production
 - `npm run start` - Start the production server
 - `npm run lint` - Run ESLint for code quality
 
@@ -92,11 +91,11 @@ npm run dev
   - Framer Motion
 - **Backend**:
   - Express.js
-  - Python (for data processing)
 - **Development Tools**:
   - ESLint
   - TypeScript ESLint
   - PostCSS
+  - Tailwind CSS
 
 ## 🤝 Contributing
 We welcome contributions! Please see [INSTRUCTIONS.md](INSTRUCTIONS.md) for detailed development workflow guidelines.
@@ -108,12 +107,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with modern web technologies and open-source tools
 - Powered by TanStack's excellent React libraries
 - Inspired by the need for efficient government proceedings management
-
-## 📞 Contact & Support
-For questions, issues, or feature requests, please:
-- Open an issue on GitHub
-- Contact the development team at [contact email]
-- Join our community discussions
 
 ---
 Made with ❤️ for improving government transparency and efficiency

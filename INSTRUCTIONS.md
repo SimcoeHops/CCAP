@@ -4,8 +4,8 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/SimcoeHops/CCAP.git
-cd CCAP
+git clone [your-repository-url]
+cd commissioners-court
 ```
 
 2. Install dependencies:
@@ -17,15 +17,12 @@ npm install
    - Create a new file called `.env` in the root directory
    - Add the following content:
    ```
-   VITE_API_URL=http://localhost:3003
+   VITE_API_URL=http://localhost:3003/api
    ```
 
 4. Start the development servers:
 ```bash
-# Terminal 1: Start the Express server
-node server.js
-
-# Terminal 2: Start the Vite dev server
+# Start both client and server in development mode
 npm run dev
 ```
 
@@ -62,9 +59,8 @@ When your feature is ready:
 git push origin feature/your-feature-name
 ```
 
-2. Go to [GitHub](https://github.com/SimcoeHops/CCAP)
-3. Create a Pull Request from your feature branch to main
-4. Wait for review and merge
+2. Create a Pull Request from your feature branch to main
+3. Wait for review and merge
 
 ### 5. After Merge
 1. Switch back to main:
@@ -103,24 +99,29 @@ If you encounter issues:
 4. Check the console for error messages
 5. Ensure both development servers are running
 
-### GitHub Authentication
-- Ensure you're logged into GitHub on your machine
-- Set up SSH keys or use GitHub CLI for easier authentication
-- Request access to the repository if needed
-
 ## Project Structure
 ```
-CCAP/
-├── src/               # React source files
-│   ├── components/    # React components
-│   ├── api/          # API integration
-│   └── types/        # TypeScript types
-├── public/           # Static files
-├── server.js         # Express server
-└── .env             # Environment variables
+commissioners-court/
+├── client/                # Frontend application
+│   ├── src/
+│   │   ├── components/   # React components
+│   │   ├── api/         # API integration
+│   │   ├── types/       # TypeScript types
+│   │   └── assets/      # Static assets
+│   ├── public/          # Public assets
+│   └── index.html       # Entry HTML file
+├── server/               # Backend application
+│   ├── src/            # Server source code
+│   └── data/           # JSON data files
+├── dist/                # Production build output
+└── config files         # Various configuration files
 ```
 
-## Need Help?
-- Check the [README.md](README.md) for project details
-- Open an issue on GitHub for bugs or feature requests
-- Contact the development team for access issues 
+## Available Scripts
+- `npm run dev` - Start both client and server in development mode
+- `npm run dev:client` - Start only the client development server
+- `npm run dev:server` - Start only the API server
+- `npm run build` - Build the production version
+- `npm run build:server` - Build the server for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality 

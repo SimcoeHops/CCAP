@@ -97,8 +97,6 @@ const AgendaPDF = ({ items, meetingDate }: AgendaPDFProps) => (
               <Text style={styles.sectionTitle}>Attachments:</Text>
               {item.Attachments.map((attachment, index) => (
                 <Text key={index} style={styles.link}>
-                  {attachment.MatterAttachmentName}
-                  {' - '}
                   {attachment.MatterAttachmentHyperlink}
                 </Text>
               ))}
