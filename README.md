@@ -14,7 +14,7 @@ The Commissioners Court Agenda Picker (CCAP) is a modern web application designe
 *Powerful search and filtering options to find specific items*
 
 ### Generated PDF
-![PDF Generation Example](docs/images/pdf-example.png)
+![PDF Generation Example](docs/images/pdf-view.png)
 *Clean, professional PDF output with selected items*
 
 ## 🌟 Key Features
@@ -55,7 +55,7 @@ commissioners-court/
 ### Setup Steps
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/SimcoeHops/CCAP.git
 cd commissioners-court
 ```
 
