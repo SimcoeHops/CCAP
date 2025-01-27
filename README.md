@@ -3,6 +3,20 @@
 ## Overview
 The Commissioners Court Agenda Picker (CCAP) is a modern web application designed to streamline the process of managing and customizing Commissioners Court agenda items. It enables key leadership stakeholders to efficiently select and compile relevant agenda items for their organizations, transforming the way organizations interact with court proceedings.
 
+## 📸 Screenshots
+
+### Main Agenda View
+![Main Agenda Table View](docs/images/main-view.png)
+*Interactive agenda table with filtering and selection capabilities*
+
+### Search and Filter
+![Search and Filter Example](docs/images/filtering-example.png)
+*Powerful search and filtering options to find specific items*
+
+### Generated PDF
+![PDF Generation Example](docs/images/pdf-example.png)
+*Clean, professional PDF output with selected items*
+
 ## 🌟 Key Features
 - **Interactive Agenda Table**: Browse and select agenda items through a user-friendly interface powered by TanStack Table
 - **Smart Filtering**: 
